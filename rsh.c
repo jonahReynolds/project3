@@ -77,9 +77,9 @@ int main() {
 
 			char *dir = strtok(NULL, " ");
 			if (dir == NULL) {
-				fprintf(stderr, "-rsh: cd: missing argument\n");
+				printf("-rsh: cd: missing argument\n");
 			} else if (strtok(NULL, " ") != NULL) {
-				fprintf(stderr, "-rsh: cd: too many arguments\n");
+				printf("-rsh: cd: too many arguments\n");
 			} else if (chdir(dir) != 0) {
 				perror("-rsh: cd failed");
 			}
