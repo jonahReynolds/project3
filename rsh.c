@@ -97,7 +97,7 @@ int main() {
 			
 			continue;
 		}
-		
+
 
 		char *arg[20];
 		arg[0] = cmd;
@@ -129,7 +129,7 @@ int main() {
 		}
 
 		if (WIFEXITED(status)) {
-			printf("Spawned process exited with status %d\n", WEXITSTATUS(status));
+			fprintf(stderr, "Spawned process exited with status %d\n", WEXITSTATUS(status));
 		}
 
 		// Destroy spawn attributes
