@@ -66,7 +66,7 @@ int main() {
 
 		
 		if(isAllowed(cmd) == 0) {
-			printf("NOT ALLOWED\n");
+			printf("NOT ALLOWED!\n");
 			continue;
 		}
 
